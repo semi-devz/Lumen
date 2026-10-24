@@ -190,7 +190,7 @@ int main(int argc, const char *argv[]) {
     desc.name = @"Sunshine Virtual Display";
     desc.vendorID = 0xF0F0;
     desc.productID = 0x5678;
-    desc.serialNum = arc4random();
+    desc.serialNum = 0x4C554D4E; // Stable serial: 'LUMN'
     desc.maxPixelsWide = (unsigned int)width;
     desc.maxPixelsHigh = (unsigned int)height;
     // Fixed 27" monitor physical size — do NOT scale linearly with resolution.
